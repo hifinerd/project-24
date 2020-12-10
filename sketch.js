@@ -20,7 +20,7 @@ function setup() {
 	//Create the Bodies Here.
 	ground = Bodies.rectangle(width/2, height-20, width, 10 , {isStatic:true} );
 	World.add(world, ground);
-	paper = new Paper(100,50,25)
+	paper = new Paper(100,620,25)
 	bottombin = new Bin(650,665,200,20)
 	leftbin = new Bin(550,600,20,150)
 	rightbin = new Bin(750,600,20,150)
@@ -48,7 +48,7 @@ function draw() {
 function keyPressed() {
 	if (keyCode === UP_ARROW) {
 		//console.log(paper.body);
-		Matter.Body.applyForce(paper.body,paper.body.position,{x:55,y:-55})
+		Matter.Body.applyForce(paper.body,paper.body.position,{x:85,y:-115})
 		//console.log(paper.body);
 	}
 }
